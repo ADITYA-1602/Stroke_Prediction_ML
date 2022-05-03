@@ -68,10 +68,11 @@ def predict():
         ]]))
 
         output=prediction
+
         if output == 1:
-            return render_template('home.html',prediction_text="The patient is likely to have Stroke Disease!!")
+            return render_template('home.html',predicted_text="The patient is likely to have Stroke Disease!!")
         else:
-            return render_template('home.html',prediction_text="The patient is not likely to have Stroke Disease!!")
+            return render_template('home.html',predicted_text="The patient is not likely to have Stroke Disease!!")
     return render_template("home.html")
 
 if __name__ == "__main__":
